@@ -48,12 +48,13 @@ const Navbar = () => {
 		<nav
 			ref={navRef}
 			className={styles.navContainer}
+			id='navbar'
 			style={{
 				background: `${newTheme.background}`,
 				boxShadow: `3px 3px 10px ${newTheme.line}`,
 			}}
 		> 
-			<div className={styles.navbar}> 
+			<div className={styles.navbar} > 
 				<a href='#home' > 
 					<div className={styles.logo}>
 						<img
@@ -67,12 +68,12 @@ const Navbar = () => {
 					style={{ color: `${newTheme.title}` }}
 					className={styles.links}
 				>
-					<a href='#home'>Home</a>
-					<a href='#about'>About</a>
+					<a id="home" href='#home'>Home</a>
+					<a  id="about" href='#about'>About</a>
 					{/* <a href='#experience'>Experience</a> */}
-					<a href='#projects'>Projects</a>
+					<a id = "projects" href='#projects'>Projects</a>
 
-					<a href='#contact'>Contact</a>
+					<a id='contact'   href='#contact'>Contact</a>
 				</div>
 				<button
 					aria-label={mode === 'dark' ? 'Light Mode' : 'Dark Mode'}
