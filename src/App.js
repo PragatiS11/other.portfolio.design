@@ -2,6 +2,7 @@ import React, { useEffect, useRef, useState } from 'react';
 import './App.css';
 import Home from './Components/Home/Home';
 import Navbar from './Components/Navbar/Navbar';
+import Skills from './Components/TechStacks/Skills';
 import { ThemeContext } from './ContextProvider/ThemeContext';
 
 function App() {
@@ -53,8 +54,8 @@ function App() {
 						<a onClick={handleMenu} href='#projects'>
 							Projects
 						</a>
-						<a onClick={handleMenu} href='#techStacks'>
-							Profeciencies
+						<a onClick={handleMenu} href='#skills'>
+						  Skills
 						</a>
 						<a onClick={handleMenu} href='#contact'>
 							Contact

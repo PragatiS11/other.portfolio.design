@@ -22,7 +22,6 @@
 	width: 80%;
 	margin: auto 10%;
 	height: fit-content;
-
 	display: flex;
 	/* opacity: .4; */
 	justify-content: space-between;
@@ -37,6 +36,7 @@
 	display: inline-block;
 	/* color: #000; */
 	text-decoration: none;
+	
 }
 .links a:hover {
 	color: #00a0a0;

@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import styles from './Home.module.css';
 import Card from '../Card/Card';
 import SideIcons from '../SideIcons/SideIcons';
-import TechStacks from '../TechStacks/TechStacks';
+import Skills from '../TechStacks/Skills';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
@@ -126,8 +126,8 @@ const Home = ({ scrollRef }) => {
 				<About />
 			</div>
 
-			<div id='techStacks' className={styles.techStacks}>
-				<TechStacks />
+			<div id='skills' className={styles.techStacks}>
+				<Skills/>
 			</div>
 
 			{/* <div

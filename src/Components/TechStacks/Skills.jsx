@@ -2,7 +2,7 @@ import React, { useContext } from 'react';
 import { ThemeContext } from '../../ContextProvider/ThemeContext';
 import styles from './TechStacks.module.css';
 
-const TechStacks = () => {
+const Skills = () => {
 	const { newTheme } = useContext(ThemeContext);
 	return (
 		<div
@@ -15,7 +15,7 @@ const TechStacks = () => {
 				style={{ color: `${newTheme.title}` }}
 				className={styles.heading}
 			>
-				Proficiencies
+				Skills
 			</h1>
 			<div className={styles.borderBottom} />
 			<div className={styles.container}>
@@ -110,4 +110,4 @@ const TechStacks = () => {
 	);
 };
 
-export default TechStacks;
+export default Skills;
