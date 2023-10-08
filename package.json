@@ -1,4 +1,5 @@
 {
+	"homepage": "https://PragatiS11.github.io",
 	"name": "pragatishrivas",
 	"version": "0.1.0",
 	"private": true,
@@ -43,6 +44,6 @@
 	},
 	"devDependencies": {
 		"gh-pages": "^3.2.3"
-	},
-	"homepage": "."
+	}
+	
 }

@@ -8,7 +8,7 @@ const About = () => {
 	const [width] = WindowSize();
 	const img =
 		width < 650
-			? 'https://avatars.githubusercontent.com/u/86410121?v=4' // my Picture
+			? 'https://raw.githubusercontent.com/PragatiS11/reactPracticeProject/main/image/img.jpeg' // my Picture
 			: 'https://github.com/himrd95/portfolio/blob/main/public/developer.gif?raw=true';
 	return (
 		<div

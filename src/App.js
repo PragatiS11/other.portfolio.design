@@ -6,32 +6,15 @@ import Skills from './Components/TechStacks/Skills';
 import { ThemeContext } from './ContextProvider/ThemeContext';
 
 function App() {
-	const [state, setState] = useState(false);
+	
 	const { newTheme, open, handleMenu } =
 		React.useContext(ThemeContext);
 	const scrollRef = useRef();
 
-	useEffect(() => {
-		setTimeout(() => {
-			setState(true);
-		}, 2200);
-	}, []);
 
 	return (
 		<React.Fragment>
-			{!state ? (
-				<div
-					style={{
-						background: `${newTheme.background}`,
-					}}
-					className='logoStart'
-				>
-					<img
-						src='https://t3.ftcdn.net/jpg/03/68/95/08/360_F_368950850_aMW6C9P5SV7udFGHWgz97fvgNVsnOvpp.jpg'
-						alt='logo'
-					/>
-				</div>
-			) : (
+			
 				<div className='components'>
 					<div
 						style={{
@@ -64,7 +47,7 @@ function App() {
 					<Navbar />
 					<Home scrollRef={scrollRef} />
 				</div>
-			)}
+			
 		</React.Fragment>
 	);
 }
